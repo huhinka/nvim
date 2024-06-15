@@ -5,6 +5,5 @@ return {
     -- as this can be noisy when debugging with a watchdog.
     local dapui = require("dapui")
     dapui.setup()
-    return {}
   end,
 }
