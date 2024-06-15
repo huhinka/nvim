@@ -10,7 +10,7 @@ return {
     end, { bang = true })
 
     -- Colorize nvim-dap repl buffer
-    vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
+    vim.api.nvim_create_autocmd({ "BufEnter" }, {
       pattern = "[dap-repl-*",
       callback = function()
         vim.g.baleia.automatically(vim.api.nvim_get_current_buf())
