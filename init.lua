@@ -10,6 +10,12 @@ if vim.g.neovide then
 
   vim.g.neovide_cursor_vfx_mode = "sonicboom"
 
+  vim.keymap.set({ "n", "i" }, "<D-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
+  -- Allow clipboard paste in neovim
+  vim.keymap.set({ "n", "v", "s", "x", "o", "i", "l", "c", "t" }, "<D-v>", function()
+    vim.api.nvim_paste(vim.fn.getreg("+"), true, -1)
+  end, { noremap = true, silent = true })
+
   local function set_ime(args)
     if args.event:match("Enter$") then
       vim.g.neovide_input_ime = true

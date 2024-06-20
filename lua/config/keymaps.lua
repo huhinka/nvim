@@ -5,9 +5,6 @@
 vim.keymap.set("i", "<C-【>", "<C-[>")
 
 vim.keymap.set("n", "<leader>fs", "<cmd>w<cr><esc>", { desc = "Save File" })
-if vim.g.neovide then
-  vim.keymap.set({ "n", "i" }, "<D-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
-end
 
 -- Debug
 vim.keymap.set("n", "<F5>", function()
