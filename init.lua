@@ -3,9 +3,7 @@ require("config.lazy")
 vim.cmd("language en_US")
 
 if vim.g.neovide then
-  vim.o.guifont = "FiraCode Nerd Font:h14"
-  vim.g.neovide_transparency = 0.9
-  vim.g.neovide_window_blurred = true
+  vim.o.guifont = "SpaceMono Nerd Font"
   vim.g.neovide_hide_mouse_when_typing = true
 
   vim.g.neovide_cursor_vfx_mode = "sonicboom"
