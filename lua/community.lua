@@ -9,6 +9,7 @@ return {
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.project.projectmgr-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.typescript" },
