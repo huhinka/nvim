@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
+  { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.html-css" },
